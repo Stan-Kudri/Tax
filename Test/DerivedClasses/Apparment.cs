@@ -16,7 +16,14 @@ namespace Tax
 
         public override float TaxCalculation()
         {
-            return Worth/1000;
+            try
+            {
+                return Worth / 1000;
+            }
+            finally
+            {
+                this.Dispose();
+            }
         }
     }
 }
