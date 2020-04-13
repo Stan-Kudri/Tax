@@ -21,8 +21,7 @@ namespace Tax
                 return Worth / 500;
             }
             finally
-            {
-                this.Dispose();
+            {                
             }
         }
     }

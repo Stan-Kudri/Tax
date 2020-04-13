@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tax
 {
-    class Property : IDisposable
+    class Property 
     {
         public float Worth { get; set; }
 
@@ -19,10 +19,6 @@ namespace Tax
         {
             return Worth;
         }
-
-        public void Dispose()
-        {
-            Console.Beep();
-        }
+               
     }
 }
